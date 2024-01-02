@@ -18,3 +18,14 @@ class Personnage :
 
     def position(self):
         return (self.x, self.y)
+    
+personnage_instance = Personnage(0, 0)
+
+personnage_instance.gauche()
+personnage_instance.haut()
+print(personnage_instance.position())
+
+personnage_instance.droite()
+personnage_instance.droite()
+personnage_instance.bas()
+print(personnage_instance.position())
