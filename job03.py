@@ -1,9 +1,13 @@
 class operation :
-    def __init__(self, nombre1=12, nombre2=13) :
+    def __init__(self, nombre1, nombre2) :
         self.nombre1 = nombre1
         self.nombre2 = nombre2
         
-operation_instance = operation()
+    def addition(self):
+        resultat = self.nombre1 + self.nombre2
+        print(f"resultat = {resultat}")
+        
+operation_instance = operation(12,3)
 
-print("LeNombre1 est:", operation_instance.nombre1)
-print("LeNombre2 est:", operation_instance.nombre2)
+operation_instance.addition()
+    
