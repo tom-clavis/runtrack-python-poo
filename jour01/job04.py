@@ -1,5 +1,5 @@
 class Personne :
-    def __init__(self, nom, prenom):
+    def __init__(self, prenom, nom):
         self.prenom = prenom
         self.nom = nom
         
@@ -7,10 +7,10 @@ class Personne :
         return f"Je suis {self.prenom} {self.nom}"
         
         
-John = Personne("Doe", "John")
+John = Personne("John", "Doe")
 John.SePresenter()
 print(John.SePresenter())
 
-Jean = Personne("Dupont", "Jean")
+Jean = Personne("Jean", "Dupont")
 Jean.SePresenter()
 print(Jean.SePresenter())
