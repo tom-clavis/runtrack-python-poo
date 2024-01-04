@@ -37,9 +37,8 @@ class CompteBancaire:
         else:
             print("Opération impossible. Solde insuffisant.")
 
-# Exemple d'utilisation
-compte1 = CompteBancaire(1, "Doe", "John", 1000)
-compte2 = CompteBancaire(2, "Smith", "Jane", -500, decouvert=True)
+compte1 = CompteBancaire(1, "Damien", "Damien", 1000)
+compte2 = CompteBancaire(2, "Cordial", "Alicia", -500, decouvert=True)
 
 compte1.afficher()
 compte1.afficher_solde()
@@ -52,7 +51,7 @@ compte1.retrait(200)
 
 compte2.agios(0.02)
 
-compte1.virement(compte2, 300)
+compte1.virement(compte2, 600)
 
 compte1.afficher_solde()
 compte2.afficher_solde()
