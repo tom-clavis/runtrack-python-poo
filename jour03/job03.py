@@ -30,7 +30,7 @@ class ListeDeTaches:
             tache.marquer_comme_finie() 
 liste_de_taches = ListeDeTaches()
 
-tache1 = Tache("Faire le ménage", "Acheter un balai sinon compliqué pour le ménage")
+tache1 = Tache("Acheter des clopes", "Abandonner ma famille")
 tache2 = Tache("Envoyer un mail", "Quitter mon travail")
 
 liste_de_taches.ajouter_tache(tache1)
